@@ -57,6 +57,9 @@ form{
     background-color: rgb(223,223,223);
     border-radius: 4px;
     display: flex;
+    position: relative;
+    align-items: center;
+    
 }
 
 form input{
@@ -69,11 +72,18 @@ form input{
     display: inline-block;
 }
 
-form ion-icon{
+form i{
  width: 9%;
- font-size: 3rem;
+ font-size: 2rem;
  margin: 9px;
  color: rgb(75,75,75);   
+ text-align: center;
+ background: transparent;
+ margin-left: -9px;
+ display: none;
+ position: absolute;
+ top: 5px;
+ right: 5px;
 }
 
 .search-result {

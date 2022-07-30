@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>food recipe app</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <section>
       <div class="container">
-        <h1 class="brand">recipe <span>App</span></h1>
+        <h1 class="brand"><span>recipe App Using API'S</h1>
         <form>
           <input type="text" placeholder="search your recipe..." />
-          <ion-icon name="search"></ion-icon>
+          <button type="submit" class="search-btn" id="search-btn">
+          <!-- <ion-icon  name="search"></ion-icon> -->
+          <i class="fas fa-search"></i>
+        </button>
         </form>
+       
+          
+        
         <div class="search-result">
-          <div class="item">
-            <div class="images">
+          <!-- <div class="item"> -->
+            <!-- <div class="images">
               <img src="./image/food1.jpg" alt="" />
             </div>
             <div class="flex-container">
@@ -36,9 +44,9 @@
               <a class="view-button" href="#">view recipe</a>
             </div>
             <h3 class="item-data">calories:120</h3>
-          </div>
+          </div> -->
 
-          <div class="item">
+          <!-- <div class="item">
             <div class="images">
               <img src="./image/food1.jpg" alt="" />
             </div>
@@ -47,7 +55,7 @@
               <a class="view-button" href="#">view recipe</a>
             </div>
             <h3 class="item-data">calories:120</h3>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>

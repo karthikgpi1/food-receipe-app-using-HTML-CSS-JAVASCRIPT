@@ -1,6 +1,7 @@
 const searchForm = document.querySelector('form');
 const searchResultDiv = document.querySelector('.search-result');
 const container = document.querySelector('.container');
+const searchBtn = document.querySelector('.search-btn');
 
 let searchQuery = '';
 
@@ -12,11 +13,14 @@ searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     searchQuery = e.target.querySelector('input').value;
     fetchAPI();
+    console.log(searchQuery);
 
 });
 
+
+
 async function fetchAPI (){
-    const baseURL = `https://api.edamam.com/search?q=pizza&app_id=${APP_ID}&app_key=${APP_KEY}`;
+    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}`;
     const response = await fetch(baseURL);
     const data = await response.json();
     generateHTML(data.hits);
